@@ -90,8 +90,8 @@ func deploy() {
 	)
 
 	params := &elasticbeanstalk.UpdateEnvironmentInput{
-		ApplicationName: aws.String("deployer"),
-		EnvironmentName:   aws.String("deployer-api"),
+		ApplicationName: aws.String("invoicer"),
+		EnvironmentName:   aws.String("invoicer-api"),
 		VersionLabel:    aws.String("invoicer-api"),
 	}
 	resp, err := svc.UpdateEnvironment(params)
